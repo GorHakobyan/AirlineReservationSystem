@@ -1,7 +1,6 @@
 public enum SeatStatus {
     FREE(0),
-    RESERVED(1),
-    BOOKED(2);
+    BOOKED(1);
 
     private final int numVal;
 

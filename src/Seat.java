@@ -6,19 +6,14 @@ public class Seat {
         NUMBER = number;
     }
 
-    public void reserve() {
-        m_status = SeatStatus.RESERVED;
+    public SeatStatus getStatus() {
+        return m_status;
     }
 
     public void book() {
         m_status = SeatStatus.BOOKED;
     }
 
-    public void cancelReservation() {
-        m_status = SeatStatus.FREE;
-    }
-
     public void cancelBooking() {
-        cancelReservation();
-    }
+        m_status = SeatStatus.FREE;    }
 }

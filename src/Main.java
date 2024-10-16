@@ -7,5 +7,9 @@ public class Main {
         final int SCREEN_HEIGHT = gd.getDisplayMode().getHeight();
 
         var windowManager = new WindowManager(SCREEN_WIDTH, SCREEN_HEIGHT, "Airline Reservation System");
+
+        var boeing = new Airplane(25,5,5);
+        var boeingView = new AirplaneView(boeing);
+        windowManager.addPanel(boeingView);
     }
 }
